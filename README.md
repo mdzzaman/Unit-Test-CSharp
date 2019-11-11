@@ -1,5 +1,5 @@
 # C# Unit test
-- There is different way of unit test in this example.
+- There are different ways of unit test in this example.
 ## Features:-
 - Test case life cycle
 - Dependency Injection
