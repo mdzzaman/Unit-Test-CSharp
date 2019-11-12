@@ -105,13 +105,13 @@ namespace WebApi.Test
             Assert.AreEqual(original.NumberOfFruit, 12);
         }
 
+        //    // ============= Currently .net core not support =================
         //[Ignore]
         //[TestMethod]
         //[DeploymentItem("Ocaramba.MsTests\\data\\data.csv")]
         //[DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", @"|DataDirectory|\data\data.csv", "data#csv", DataAccessMethod.Sequential)]
         //public void CreateNewJuice_CSVData_TwelveFruits()
         //{
-        //    // ============= Currently .net core not support =================
         //    //Arrange
         //    //int a = Convert.ToInt32(TestContext.DataRow[0]);
         //    //int b = Convert.ToInt32(TestContext.DataRow[1]);

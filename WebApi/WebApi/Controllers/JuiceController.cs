@@ -11,27 +11,21 @@ namespace WebApi.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class FruitController : ControllerBase
+    public class JuiceController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
-        private readonly ILogger<FruitController> _logger;
+        private readonly ILogger<JuiceController> _logger;
         private readonly IJuiceBuilder _juiceBuilder;
 
-        public FruitController(ILogger<FruitController> logger, IJuiceBuilder juiceBuilder)
+        public JuiceController(ILogger<JuiceController> logger, IJuiceBuilder juiceBuilder)
         {
             _logger = logger;
             _juiceBuilder = juiceBuilder;
         }
 
         [HttpGet]
-        public Juice Get()
+        public Juice Get(int NumberOfPeople, int NumberOfPeopleNotInterest)
         {
-            var rng = new Random();
-            var order = new Order { NumberOfPeople = 100, NumberOfPeopleNotInterest = 20 };
+            var order = new Order { NumberOfPeople = NumberOfPeople, NumberOfPeopleNotInterest = NumberOfPeopleNotInterest };
             _juiceBuilder.CreateNewJuice(order);
             return _juiceBuilder.GetJuice();
         }
