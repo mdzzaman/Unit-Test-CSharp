@@ -1,6 +1,6 @@
 # C# Unit test
 - There are different ways of unit test in this example.
-## Features:- [Wiki](https://github.com/mdzzaman/Unit-Test-CSharp/wiki)
+## Features:- [Wiki](https://github.com/mdzzaman/Unit-Test-CSharp/wiki/1.-Private-method-test)
 - Test case life cycle
 - Dependency Injection
 - Private method test
