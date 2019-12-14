@@ -14,7 +14,7 @@ namespace WebApi.Services
             GC.SuppressFinalize(this); //Hey, GC: don't bother calling finalize later
         }
 
-        public IFruit GetFruit()
+        public Orange GetFruit()
         {
             return new Orange();
         }

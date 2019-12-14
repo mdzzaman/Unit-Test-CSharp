@@ -8,7 +8,7 @@ namespace WebApi.Interface
 {
     public interface IManual
     {
-        IFruit GetFruit();
+        Orange GetFruit();
         int NumberOfFruits(int numberOfPeoples);
     }
 }
